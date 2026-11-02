@@ -1,0 +1,18 @@
+{
+  "name": "Support",
+  "short_name": "Support",
+  "description": "A private wellbeing and peer-support space.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FAF6F1",
+  "theme_color": "#FAF6F1",
+  "icons": [
+    {
+      "src": "/support-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

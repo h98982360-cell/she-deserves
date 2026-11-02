@@ -1,0 +1,17 @@
+{
+  "name": "she-deserves",
+  "private": true,
+  "workspaces": [
+    "apps/web",
+    "apps/api"
+  ],
+  "overrides": {
+    "minimatch": "^11.0.1"
+  },
+  "scripts": {
+    "dev": "npm run dev --workspace @she-deserves/web",
+    "dev:api": "npm run start:dev --workspace @she-deserves/api",
+    "build": "npm run build --workspace @she-deserves/web && npm run build --workspace @she-deserves/api",
+    "typecheck": "npm run typecheck --workspace @she-deserves/web && npm run typecheck --workspace @she-deserves/api"
+  }
+}

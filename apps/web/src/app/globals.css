@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --cream: #faf6f1;
+  --plum: #4b2e5a;
+  --midnight: #1d1522;
+  --teal: #2e8b8b;
+  --coral: #e2725b;
+  --sage: #5f8d6b;
+  --amber: #d99a2b;
+  --emergency: #b3261e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--midnight);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 3px;
+}
+
+::selection {
+  color: white;
+  background: var(--plum);
+}
+
+.hero-wash {
+  background:
+    radial-gradient(ellipse at 86% 16%, rgba(226, 114, 91, 0.13), transparent 30%),
+    radial-gradient(ellipse at 70% 70%, rgba(46, 139, 139, 0.1), transparent 35%),
+    #f5eee7;
+}
+
+.soft-grid {
+  background-image: radial-gradient(rgba(75, 46, 90, 0.1) 0.7px, transparent 0.7px);
+  background-size: 15px 15px;
+}
+
+.card-hover {
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 50px rgba(49, 35, 54, 0.12);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

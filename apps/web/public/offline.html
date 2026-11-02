@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    <meta name="theme-color" content="#FAF6F1">
+    <title>Support</title>
+    <style>
+      :root { color-scheme: light; font-family: Arial, Helvetica, sans-serif; background: #FAF6F1; color: #1D1522; }
+      * { box-sizing: border-box; }
+      body { margin: 0; padding: 1.25rem; }
+      main { max-width: 42rem; margin: 2rem auto; padding: clamp(1.25rem, 5vw, 2.5rem); background: white; border: 1px solid #E8DDEB; border-radius: 1.5rem; }
+      h1 { margin-top: 0; color: #4B2E5A; font-size: clamp(1.75rem, 6vw, 2.5rem); }
+      h2 { margin-top: 2rem; color: #4B2E5A; font-size: 1.15rem; }
+      p, li { font-size: 1rem; line-height: 1.7; }
+      a { color: #3D2449; font-weight: 700; text-underline-offset: .2em; }
+      a:focus-visible, button:focus-visible { outline: 3px solid #216969; outline-offset: 3px; }
+      .urgent { border-left: 4px solid #B3261E; padding: .5rem 1rem; background: #FFF2F0; }
+      .note { color: #514A54; font-size: .9rem; }
+      button { min-height: 2.75rem; border: 1px solid #4B2E5A; border-radius: 99rem; background: white; color: #3D2449; padding: .5rem 1rem; font-weight: 700; cursor: pointer; }
+      @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="note">Offline support</p>
+      <h1>You deserve help, even when you’re offline.</h1>
+      <div class="urgent">
+        <p><strong>If you or someone else is in immediate danger:</strong> contact the emergency service for your location, or go to a nearby emergency department if you can. This app is not monitored and cannot dispatch help.</p>
+      </div>
+      <h2>If it feels safe to do so</h2>
+      <ul>
+        <li>Move toward a public or safer place, if that is possible for you.</li>
+        <li>Contact someone you trust and tell them what would help right now.</li>
+        <li>Use a local crisis or specialist support service. If you have no data connection, try a phone call or text if those are available to you.</li>
+        <li>Take one small step: notice your surroundings, feel your feet on the floor, or pause and breathe at your own pace.</li>
+      </ul>
+      <h2>Find a crisis service when you’re back online</h2>
+      <ul>
+        <li><a href="https://findahelpline.com/">Find A Helpline</a> — crisis support directories by country.</li>
+        <li><a href="https://www.iasp.info/resources/Crisis_Centres/">International Association for Suicide Prevention</a> — crisis-centre resources.</li>
+        <li><a href="https://988lifeline.org/">988 Lifeline</a> — United States support information.</li>
+      </ul>
+      <p class="note">Services and availability differ by country. These links need an internet connection. This app does not collect your location, provide emergency monitoring, or replace licensed therapy or emergency services.</p>
+      <button type="button" onclick="history.back()">Return to the previous page</button>
+    </main>
+  </body>
+</html>
